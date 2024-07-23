@@ -45,13 +45,27 @@ def key_pressed():
 
     # 10. Increment the x and y variables of the 2 eye variables by 5:
     #     left_eye.x += 5
-    
+    left_eye.x += 5
+    right_eye.x += 5
+    left_eye.y += 5
+    right_eye.y += 5
+    left_eye.draw()
+    right_eye.draw()
+
     # 11. Call the .draw() method for both eye variables.
 
 
 if __name__ == '__main__':
     window = turtle.Screen()
-    
+    set_background('bigEyedCat.gif')
+    my_turtle = turtle.Turtle()
+    turtle.color('maroon')
+    turtle.width(0)
+    turtle.speed(0)
+    left_eye  = Eye(eye=my_turtle, x=41, y=14, radius=30)
+    right_eye = Eye(eye=my_turtle, x=-32, y=31, radius=30)
+    left_eye.draw()
+    right_eye.draw()
     # 1. Find an image of a cat with BIG eyes OR use one of the 2 images provided
     #    a. Find an image using google to search. The image must be a .gif file
     #    b. Right click on the image and select 'Save image As'

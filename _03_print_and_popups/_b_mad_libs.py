@@ -8,18 +8,21 @@ if __name__ == '__main__':
     window.withdraw()
     # Put this sentence in a pop-up message box:
     messagebox.showinfo("informer", "If you find yourself having to cross a piranha-infested river, heres how to do it...")
-    # "If you find yourself having to cross a piranha-infested river, here's how to do it..."
- adjective = simpledialog.askstring("informer", "Enter an adjective")
+# "If you find yourself having to cross a piranha-infested river, here's how to do it..."
+    adjective = simpledialog.askstring("informer", "Enter an adjective")
 
-    liquid = simpledialog.askstring("Enter a type of liquid")
-    body_part = simpledialog.askstring("Enter a body part")
-    verb = simpledialog.askstring("Enter a verb")
-    place = simpledialog.askstring("Enter a place")
-    messagebox.showinfo("Piranhas are more [**adjective**] during the day, so cross the river at\n"
-        "night. Piranhas are attracted to fresh [**type of liquid**] and will most\n"
-        "likely take a bite out of your [**body part**] if you [**verb**]. Whatever\n"
-        "you do, if you have an open wound, try to find another way to get "
-        "back to the [**place**]. Good luck!")
+    liquid = simpledialog.askstring("mad libs dude", "Enter a type of liquid")
+
+    body_part = simpledialog.askstring("mad libs dude", "Enter a body part")
+    verb = simpledialog.askstring("mad libs dude", "Enter a verb")
+    place = simpledialog.askstring("mad libs dude", "Enter a place")
+    messagebox.showinfo("informer", "Piranahas are more " + adjective +" during the day, so cross the river at night.")
+    messagebox.showinfo("informer", "Piranahas are attracted to fresh " + liquid + " and will most")
+    messagebox.showinfo("informer", "likely to take a bite out of your " + body_part + " if you " + verb + ".")
+    messagebox.showinfo("informer", "Whatever you do, if you have an open wound, try to find another way to get back the")
+    messagebox.showinfo("informer", place + ". Good luck!")
+
+    window.mainloop()
     # Get the player to enter an adjective
 
     # Get the player to enter a type of liquid
