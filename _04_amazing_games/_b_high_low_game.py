@@ -13,6 +13,14 @@ if __name__ == '__main__':
     print(random_num)
     # 3. Code a for loop to run steps 4-10, 10 times
     for i in range (10):
+        guess = simpledialog.askinteger("High or Low", "Guess a number from 1 - 100")
+        if guess == (random_num):
+            messagebox.showinfo("High or Low", "You guessed it!")
+        elif guess < (random_num):
+            messagebox.showinfo("High or Low", "Higher")
+        elif guess > (random_num):
+            messagebox.showinfo("High or low", "Lower")
+    messagebox.showerror("High or Low", "You lost.... nice try though! The answer was " + random_num.__str__() +".")
 
         # 4. Ask the user for a guess using a pop-up window, and save their response
 
